@@ -31,10 +31,11 @@ h1 {
 }
 
 .faq {
+    margin-top: 100px;
     width: auto;
     max-width: 80%;
-    max-height: ;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 100px;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -86,6 +87,7 @@ h1 {
 }
 
 footer {
+  margin-top: 100px;
     background-color: #f9f9f9;
     color: #333;
     font-family: Arial, sans-serif;
@@ -96,7 +98,8 @@ footer {
   }
   
   .container {
-    display: flex;
+    margin-top: 100px;
+    
     justify-content: space-between;
     align-items: flex-start;
     padding-left: 6rem;
