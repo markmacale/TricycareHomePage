@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <link rel="stylesheet" href="/css/homePageFAQ.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About us</a>
+            <a href="#how-it-works">Services</a>
+            <a href="#firstcontent">Features</a>
+        </nav>
+    </header>
+    
+
+    <section class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-category">
+            <h2>Passenger</h2>
+            <div class="faq-item">
+                <button class="faq-question">How to book a ride?</button>
+                <div class="faq-answer">
+                    <p>To book a ride, open the app, choose your destination, and confirm your booking.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What happens if the driver cancels my ongoing booking?</button>
+                <div class="faq-answer">
+                    <p>You will be notified immediately, and you can rebook another driver.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I cancel my ongoing booking?</button>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your ongoing booking through the app.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-category">
+            <h2>Driver</h2>
+            <div class="faq-item">
+                <button class="faq-question">How can I earn?</button>
+                <div class="faq-answer">
+                    <p>Drivers earn through completed trips and incentives.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How to check your balance?</button>
+                <div class="faq-answer">
+                    <p>Drivers can check their balance in the earnings section of the app.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How much balance do I need to accept bookings?</button>
+                <div class="faq-answer">
+                    <p>Drivers must maintain a minimum balance in their wallet to accept bookings.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-category">
+            <h2>Operators</h2>
+            <div class="faq-item">
+                <button class="faq-question">Basic requirements</button>
+                <div class="faq-answer">
+                    <p>Operators must provide valid IDs, vehicles, and proof of ownership.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Pricing and Payment</button>
+                <div class="faq-answer">
+                    <p>Operators can review pricing and payment details in the partner portal.</p>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <footer>
+        <p>© Tricycare 2025 All rights Reserved</p>
+            <a href="#">Privacy</a> • 
+            <a href="#">Terms</a> • 
+            <a href="#">FAQ</a>
+        </p>
+    </footer>
+    <script>
+
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+
+                document.querySelectorAll('.faq-answer').forEach(answer => {
+                    answer.style.display = 'none';
+                });
+
+                answer.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

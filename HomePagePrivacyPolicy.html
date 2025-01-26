@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homePagePrivacyPolicy.css">
+    <title>TricyCare Privacy Policy</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">About us</a>
+            <a href="#how-it-works">Services</a>
+            <a href="#firstcontent">Features</a>
+            <a href="homePageFAQ.html" target="_blank">FAQs</a>
+        </nav>
+    </header>
+
+    
+    <section class="faq">
+
+        <h1>Privacy Policy</h1>
+
+        <section class="intro">
+
+            <h3>As part of TricyCare's commitment to providing exceptional and personalized services to our users and in compliance with Republic Act No. 10173, otherwise known as the Data Privacy Act of 2012, its Implementing Rules and Regulations (IRR), and issuances by the National Privacy Commission (NPC), we require you to provide certain personal information when you use our app, participate in promotions, or communicate with us.
+            </h3>
+    
+        </section>
+        <div class="faq-category">
+            <div class="faq-item">
+                <button class="faq-question">Personal Data</button>
+                <div class="faq-answer">
+                    <p>Personal Data refers to "any information, whether recorded in material form or not,
+                         from which the identity of an individual is apparent or can be reasonably and directly ascertained by the entity holding the information,
+                          or when put together with other information would directly and certainly identify an individual."</p>
+                          <p>This includes, but is not limited to:  </p>
+                      
+
+                        <ol>
+                            <li>Full Name, Contact Details (e.g., phone number, email address), and Address </li>
+                            <li>Government IDs (e.g., Driver's License, Passport)</li>
+                            <li>Location Data (active or background usage with user consent)</li>
+                            <li>Demographics (e.g., Age, Gender)</li>
+                            <li>Other information provided through app registration, forms.</li>
+                        </ol>
+
+                        <p>Providing personal information is voluntary. However, without it,
+                             TricyCare may not be able to deliver its services effectively or process your inquiries.
+                              We are committed to protecting your data from unauthorized access, use, or disclosure.
+                        </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Use of Personal Data</button>
+                <div class="faq-answer">
+                    <p>TricyCare uses your personal data to: </p>
+                    <ol>
+                        <li>Provide and improve transportation services.</li> 
+                        <li>Ensure your safety during trips and address emergencies.</li>
+                    </ol>
+                    
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Your Rights</button>
+                <div class="faq-answer">
+                    <p>Under the Data Privacy Act, you have the right to: </p>
+                    <ol>
+                        <li>Access and request a copy of your data.</li>
+                        <li>Correct inaccuracies in your personal data.</li> 
+                        <li>File a complaint with the NPC if your privacy rights are violated.</li>
+                    </ol>
+                   
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Collection of Information</button>
+                <div class="faq-answer">
+                    <p>Payment Information: </p>
+                    <ol>
+                        <li>TricyCare does not collect or store any credit card, debit card, or financial account details directly. All payment transactions are facilitated securely through GCash using QR codes. Users are directed to the GCash app to complete payments, which are subject to the terms and conditions and privacy policy of GCash.
+                            </li>
+                    </ol>
+                   
+                </div>
+            </div>
+
+
+
+            <div class="faq-item">
+                <button class="faq-question">Use of Personal Data</button>
+                <div class="faq-answer">
+                    <p>Payment Transactions: </p>
+                  
+                    <ol>
+                        <li>For transactions conducted via the GCash app, TricyCare does not process or store any financial information. We encourage users to review the GCash Privacy Policy for details on how their payment data is handled.</li>
+                    </ol>
+                   
+                </div>
+            </div>
+
+
+        </div>
+
+       
+    </section>
+    <script>
+
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+
+                document.querySelectorAll('.faq-answer').forEach(answer => {
+                    answer.style.display = 'none';
+                });
+
+                answer.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+
+
+    </script>
+
+        
+    
+        <div class="footer">
+            &copy; tricycare 2025 All rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

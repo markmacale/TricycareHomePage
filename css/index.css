@@ -1,0 +1,336 @@
+html{
+    scroll-behavior: smooth;
+  
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+  }
+  
+  header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .firstcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 80vh;
+    gap: 20rem;
+    margin-bottom: 20px;
+  }
+  
+  .firstcontent img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .firstcontent h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    margin-right: 13rem;
+  }
+  
+  .features {
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 150px;
+  }
+  
+  
+  
+  .features img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+    
+  
+  .features h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .features p {
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .features div {
+    max-width: 45%;
+    text-align: left;
+  }
+  
+  .download-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 150px;
+    background-color: #fff;
+  }
+  
+  .download-section img {
+    width: 250px;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+  }
+  
+  .google-play-button img {
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  .how-it-works {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .how-it-works h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+  }
+  
+  .how-it-works .step {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  
+  
+  
+  
+  .how-it-works .step img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+   
+  }
+  .step_img{
+    overflow:visible;
+    position: relative;
+   
+  }
+  
+  .step_img:hover img{
+    
+    transform: scale(1.2);
+  
+  }
+  
+  
+  
+  .how-it-works .step h1 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .how-it-works .step p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    gap: 20px;
+  }
+  
+  .about h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  .about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+  }
+  
+  .about p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #555;
+    max-width: 800px;
+  }
+  
+  footer {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 6rem;
+    padding-right: 16rem;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .footer-logo img {
+    width: 50px; 
+    height: auto;
+  }
+  
+  .footer-logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 20px;
+    color: #777;
+  }
+  
+  .contact-info h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .contact-info p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  .download-app p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  .download-app img {
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+  
+    .features,
+    .download-section,
+    .about .content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  
+  @keyframes moveAndFade {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  .firstcontent img {
+    animation: moveAndFade 1s ease-in-out;
+    position: relative; 
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  
+  @keyframes popUp {
+    0% {
+      transform: translateY(100%); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+  }
+  
+  
+  .firstcontent h1 {
+    animation: popUp 2s ease-out; 
+    position: relative; 
+  }
+  
