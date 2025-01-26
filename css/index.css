@@ -27,6 +27,7 @@ html{
   }
   
   .firstcontent {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,10 +35,12 @@ html{
     height: 80vh;
     gap: 20rem;
     margin-bottom: 20px;
+   
   }
   
   .firstcontent img {
-    width: 50%;
+
+    width: 30%;
     height: auto;
   }
   
@@ -56,6 +59,7 @@ html{
     justify-content: center;
     padding: 40px;
     gap: 150px;
+    
   }
   
   
