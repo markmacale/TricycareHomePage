@@ -1,14 +1,26 @@
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --bg-light: #f9f9f9;
+  --hover-color: #007bff;
+  --font-family: 'Arial', sans-serif;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 html{
-    scroll-behavior: smooth;
-  
-  }
+
+  scroll-behavior: smooth;
+}
   
   body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
     line-height: 1.6;
     background-color: #fff;
-    color: #333;
+    color: var(--primary-color);
+    
+
   }
   
   header {
@@ -17,14 +29,23 @@ html{
     align-items: center;
     padding: 1rem 2rem;
     background: #fff;
+    margin: 0 1rem;
+
   }
   
   header nav a {
     margin: 0 1rem;
     text-decoration: none;
-    color: #333;
+    color: var(--primary-color);
     font-weight: bold;
+    transition: color 0.3s ease;
+
   }
+
+  header nav a:hover {
+    color: var(--hover-color);
+}
+
   
   .firstcontent {
    
@@ -34,7 +55,7 @@ html{
     padding: 2rem;
     height: 80vh;
     gap: 20rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px
    
   }
   
@@ -42,6 +63,8 @@ html{
 
     width: 30%;
     height: auto;
+    animation: moveAndFade 1s ease-in-out;
+
   }
   
   .firstcontent h1 {
@@ -67,8 +90,15 @@ html{
   .features img {
     max-width: 40%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+
   }
+
+  .features img:hover {
+    transform: scale(1.05);
+}
+
     
   
   .features h1 {
@@ -99,7 +129,13 @@ html{
   
   .download-section img {
     width: 250px;
+    transition: transform 0.3s ease;
   }
+
+  .download-section img:hover {
+    transform: scale(1.1);
+}
+
   
   .text-content h1 {
     font-size: 2.5rem;
@@ -116,15 +152,17 @@ html{
   }
   
   .how-it-works {
-    background-color: #f9f9f9;
+    background-color: var(--bg-light);
     padding: 40px 20px;
     text-align: center;
+
   }
   
   .how-it-works h2 {
-    font-size: 36px;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: bold;
     margin-bottom: 20px;
+
     
   }
   
@@ -135,48 +173,39 @@ html{
     text-align: center;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     overflow: hidden;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   }
+  .how-it-works .step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
   
   
   
-  
-  
-  .how-it-works .step img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-   
-  }
-  .step_img{
-    overflow:visible;
-    position: relative;
-   
-  }
-  
-  .step_img:hover img{
-    
-    transform: scale(1.2);
-  
-  }
-  
-  
-  
-  .how-it-works .step h1 {
-    font-size: 20px;
-    margin-top: 15px;
-    color: #333;
-  }
-  
-  .how-it-works .step p {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #666;
-  }
+.how-it-works .step img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.how-it-works .step h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  color: var(--primary-color);
+}
+
+.how-it-works .step p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: var(--secondary-color);
+}
   
   .about {
     display: flex;
@@ -185,8 +214,9 @@ html{
     justify-content: center;
     text-align: center;
     padding: 40px;
-    background-color: white;
+    background-color: #fff;
     gap: 20px;
+
   }
   
   .about h1 {
@@ -210,15 +240,16 @@ html{
     width: 200px;
     height: 200px;
     object-fit: cover;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     margin-right: 50px;
+
   }
   
   .about p {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    color: #555;
-    max-width: 800px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--secondary-color);
+    line-height: 1.5;
+
   }
   
   footer {
@@ -308,24 +339,6 @@ html{
     margin-top: 10px;
   }
   
-  
-  @media (max-width: 768px) {
-  
-    .features,
-    .download-section,
-    .about .content {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  }
-  
-  
   @keyframes moveAndFade {
     0% {
       transform: translateX(-100%);
@@ -362,4 +375,19 @@ html{
     animation: popUp 2s ease-out; 
     position: relative; 
   }
+
+  @media (max-width: 768px) {
+    .features,
+    .download-section,
+    .about .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
   
