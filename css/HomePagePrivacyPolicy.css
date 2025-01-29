@@ -180,3 +180,76 @@ text-decoration: underline;
   width: 150px;
   margin-top: 10px;
 }
+@media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 1rem 10%;
+    justify-content: flex-end;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .faq {
+    max-width: 70%;
+    padding: 40px;
+  }
+
+  .faq-category h2 {
+    font-size: 2.2rem;
+  }
+
+  .faq-question {
+    font-size: 1.5rem;
+  }
+
+  .faq-answer {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .download-app img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav a {
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .faq {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .faq-category h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq-question,
+  .faq-answer {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.2rem;
+  }
+}
