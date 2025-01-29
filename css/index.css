@@ -51,6 +51,7 @@ nav a {
     color: #5a3d85;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -62,7 +63,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   height: 70vh; 
-  width: 100vw;
+  width: 96.5vw;
   padding: 2rem;
   gap: 3rem;
   flex-wrap: wrap;
@@ -129,16 +130,12 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-.features h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 .features p {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--primary-color);
   line-height: 1.5;
+  max-width: 800px;
+ 
 }
 
 .features div {
@@ -284,6 +281,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: #999;
 }
 
 .container {
@@ -292,6 +290,9 @@ footer {
   align-items: flex-start;
   padding-left: 6rem;
   padding-right: 16rem;
+  background: #999;
+  margin-bottom: 0;
+
 }
 
 .footer-logo {
@@ -312,18 +313,18 @@ footer {
 }
 
 .footer {
-  background-color: #f8f8f8;
+  background-color: #999;
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ddd;
   font-size: 14px;
-  color: #333;
+  
 }
 
 .footer p {
   margin: 0;
   font-size: 1rem;
-  color: #666;
+  
 }
 
 .footer a {
@@ -357,90 +358,106 @@ footer {
   margin-top: 10px;
 }
 
-@keyframes moveAndFade {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-.firstcontent img {
-  animation: moveAndFade 1s ease-in-out;
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
-
-@keyframes popUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.firstcontent h1 {
-  animation: popUp 2s ease-out;
-  position: relative;
-}
-
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
-  header {
-    justify-content: space-between;
+  .hero {
+    height: 60vh; /* Reduce height for tablet screens */
   }
 
-  header nav a {
-    margin: 0 0.5rem;
-    font-size: 0.9rem;
+  .hero-content {
+    max-width: 100%; /* Full width on smaller screens */
+    text-align: center; /* Center text for smaller screens */
   }
 
-  .firstcontent {
+  .hero h1 {
+    font-size: 4rem; /* Smaller font size for better fit */
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
+
+  .hero-images {
     flex-direction: column;
+    justify-content: center;
     text-align: center;
-    gap: 1rem;
+    position: relative;
   }
 
-  .features,
-  .download-section,
-  .about .content {
-    flex-direction: column;
-    gap: 20px;
+  .mockup {
+    width: 80%;
+    max-width: 500px;
   }
 
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .tricycle {
+    width: 80%;
+    max-width: 400px;
+    left: auto;
+    bottom: -150px;
   }
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+  .hero {
+    height: 50vh; /* Smaller height for mobile devices */
   }
 
-  .download-section img {
-    width: 70%;
+  .hero-content {
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
-  .about img {
-    width: 150px;
-    height: 150px;
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.8rem;
+  }
+
+  .hero-images {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .mockup,
+  .tricycle {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 1rem;
   }
 }
-@media (max-width: 768px) {
-  .firstcontent h1 {
-      margin-right: 0;
-      text-align: center;
+
+@media (max-width: 480px) {
+  .hero {
+    height: 45vh; /* Further reduce height for mobile screens */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.6rem;
+  }
+
+  .hero-images {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .mockup {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .tricycle {
+    width: 80%;
+    max-width: 300px;
+    left: auto;
+    bottom: -120px;
   }
 }
