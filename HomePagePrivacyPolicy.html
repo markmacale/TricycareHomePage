@@ -10,13 +10,17 @@
 
 <body>
     <header>
+        <div class="logo-container">
+            <img src="images/tricycare_logo.png" alt="Tricycare Logo" class="logo">
+            <span class="brand-name">Tricycare</span>
+        </div>
         <nav>
-            <a href="index.html#about">About us</a>
-            <a href="index.html#how-it-works">Services</a>
-            <a href="index.html#features">Features</a>
+            <a href="#about">About us</a>
+            <a href="#how-it-works">Services</a>
+            <a href="#features">Features</a>
+            <a href="homePageFAQ.html" target="_blank">FAQs</a>
         </nav>
     </header>
-
 
     <section class="faq">
 
@@ -118,27 +122,10 @@
 
 
     </section>
-    <script>
-
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const answer = button.nextElementSibling;
-                const isOpen = answer.style.display === 'block';
-
-                document.querySelectorAll('.faq-answer').forEach(answer => {
-                    answer.style.display = 'none';
-                });
-
-                answer.style.display = isOpen ? 'none' : 'block';
-            });
-        });
-
-
-    </script>
-
+   
     <footer>
 
-        <footer>
+       
             <div class="container">
                 <div class="contact-info">
                     <div class="footer-logo">
@@ -163,8 +150,28 @@
                 <a href="HomePagePrivacyPolicy.html">FAQ</a>
             </p>
             </div>
-        </footer>
+       
     </footer>
+
+
+    <script>
+
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+
+                document.querySelectorAll('.faq-answer').forEach(answer => {
+                    answer.style.display = 'none';
+                });
+
+                answer.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+
+
+    </script>
+
 </body>
 
 </html>
