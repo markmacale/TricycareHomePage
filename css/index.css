@@ -62,8 +62,8 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh; 
-  width: 96.5vw;
+  height:90vh; 
+  width: auto;
   padding: 2rem;
   gap: 3rem;
   flex-wrap: wrap;
@@ -92,21 +92,24 @@ nav a:hover {
 .hero-images {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
-}
+    gap: 20px;
+    
+  }
 
 .mockup {
-    width: 700px;
-    height: 700px; ;
+    width: 400px;
+    height: 400px;
     animation: fadeIn 1s ease-in-out;
 }
 
 .tricycle {
-    width: 600px;
-    height: 700px;
+    width: 400px;
+    height: 400px;
     position: absolute;
-    left: 425px;
-    bottom: -200px;
+    left: 225px;
+    bottom: -150px;
     animation: moveUp 1.5s ease-in-out;
 }
 
@@ -357,107 +360,144 @@ footer {
   width: 150px;
   margin-top: 10px;
 }
-
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .hero {
-    height: 60vh; /* Reduce height for tablet screens */
-  }
-
-  .hero-content {
-    max-width: 100%; /* Full width on smaller screens */
-    text-align: center; /* Center text for smaller screens */
-  }
-
-  .hero h1 {
-    font-size: 4rem; /* Smaller font size for better fit */
-  }
-
-  .hero p {
-    font-size: 2rem;
-  }
-
-  .hero-images {
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  header {
     flex-direction: column;
-    justify-content: center;
     text-align: center;
-    position: relative;
+    padding: 1rem;
   }
 
-  .mockup {
-    width: 80%;
-    max-width: 500px;
+  nav {
+    display: none; /* Hide the menu initially */
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
   }
 
-  .tricycle {
-    width: 80%;
-    max-width: 400px;
-    left: auto;
-    bottom: -150px;
+  nav a {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
   }
 }
 
-@media (max-width: 768px) {
+/* Hero Section */
+@media (max-width: 1098px) {
   .hero {
-    height: 50vh; /* Smaller height for mobile devices */
+    flex-direction: column;
+    height: 80vh;
+    padding: 3rem 1rem;
+    text-align: center;
   }
+  .tricycle{
+    display: none;
+     }
 
   .hero-content {
-    text-align: center;
-    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 6vw, 6rem);
+  }
+
+  .hero p {
+    font-size: clamp(1rem, 3vw, 3rem);
+  }
+
+  .hero-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .mockup {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+  }
+
+  
+}
+
+ 
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
   }
 
   .hero h1 {
     font-size: 3rem;
   }
 
-  .hero p {
-    font-size: 1.8rem;
-  }
-
   .hero-images {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    margin-top: 2rem;
+    flex-direction: column;
   }
-
-  .mockup,
-  .tricycle {
-    width: 100%;
-    max-width: 450px;
-    margin-top: 1rem;
-  }
+  
 }
 
-@media (max-width: 480px) {
-  .hero {
-    height: 45vh; /* Further reduce height for mobile screens */
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1.6rem;
-  }
-
-  .hero-images {
+/* Features & Download Section */
+@media (max-width: 768px) {
+  .features,
+  .download-section {
+    flex-direction: column;
+    gap: 30px;
     text-align: center;
-    margin-top: 2rem;
   }
 
-  .mockup {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .tricycle {
-    width: 80%;
-    max-width: 300px;
-    left: auto;
-    bottom: -120px;
+  .features img,
+  .download-section img {
+    max-width: 80%;
+    height: auto;
   }
 }
+
+/* How it Works Section */
+@media (max-width: 768px) {
+  .how-it-works .step {
+    width: 90%;
+  }
+}
+
+/* About Section */
+@media (max-width: 768px) {
+  .about .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+ 
+
+}
+
